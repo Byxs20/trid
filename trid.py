@@ -14,8 +14,9 @@ file_name = file_dir.split("\\")[-1]
 
 # 1.复制文件到trid文件夹下
 shutil.copy(file_dir, base_dir)
-
+ 
 # 2.开始
 os.chdir(base_dir)
 os.system(f"trid.exe {file_name}")
 os.remove(file_name)
+os.system("pause")
